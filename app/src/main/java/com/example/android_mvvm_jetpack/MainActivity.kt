@@ -28,17 +28,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Column(
-                Modifier.verticalScroll(rememberScrollState())
+                Modifier.verticalScroll(rememberScrollState()).padding(8.dp)
             ) {
                 Image(
                     painterResource(R.drawable.rengoku),
                     contentDescription = "Rengoku",
-                    modifier = Modifier.align(alignment = Alignment.CenterHorizontally)
+                    modifier = Modifier.align(alignment = Alignment.Start)
                 )
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(16.dp),
+                        .padding(8.dp),
                     verticalArrangement = Arrangement.Center,
                     horizontalAlignment = Alignment.Start
                 ) {
